@@ -24,7 +24,6 @@ jobs:
           docker cp $CONTAINER_ID:/usr/share/nginx/html ./dist
           docker rm -v $CONTAINER_ID
           ls -la ./dist
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
